@@ -13,7 +13,7 @@ Identification is achieved using high-frequency external instruments (proxies) a
 * **SVAR-IV Identification:** Leverages external proxies for Target and Path factors to identify the structural impact matrix $B$.
 * **Minimum Distance Estimation:** Instead of standard GMM or ML, the model minimizes the distance between sample moments (covariances of residuals and instruments) and the theoretical model.
 * **Odyssean vs. Delphic Components:** Includes a specialized script (`MainCodeOdyssean.m`) to clean the Path instrument from its Delphic component, isolating "Odyssean" Forward Guidance shocks.
-* **Advanced Inference:** Implements a Recursive **Wild Bootstrap** procedure and generates **Sup-T simultaneous bands** for Impulse Response Functions (IRFs).
+* **Advanced Inference:** Implements a Recursive **Wild Bootstrap** procedure and generates **Sup-T simultaneous bands** for Impulse Response Functions (IRFs). We opted for a **Wild Bootstrap** approach following **Mertens and Ravn (2019)** for its superior in-sample performance and cautious account of uncertainty, avoiding the inefficiencies and hyperparameter dependency of the **Moving Block Bootstrap** while acknowledging the potential consistency issues noted by **Jentsch and Lunsford (2019)**.
 
 ---
 
