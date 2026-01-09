@@ -1,13 +1,17 @@
-Statistical analysis of crime data using R.
+# Crime and Society: A Multivariate Statistical Approach
 
-Applies statistical methods for high-dimensional data
-to a crime dataset.
+This repository presents a comprehensive multivariate analysis of urban crime patterns across 46 U.S. cities using 1982 data. The study employs advanced dimensionality reduction and unsupervised learning techniques to uncover the latent structural and institutional conditions that influence urban crime dynamics.
 
-This repository contains a comprehensive statistical study of urban crime patterns using a dataset of 46 U.S. cities. The analysis aims to uncover the structural and institutional conditions that influence crime.
-<br>
-Key Methodologies:<br>
--Dimensionality Reduction: Applied PCA and Factor Analysis to extract meaningful components, finding that urban security infrastructure and population concentration form a primary structural dimension.
-<br>
--Clustering: Employed Ward’s Method and K-means to partition cities into homogeneous groups, revealing a clear bifurcation between high-density, institutionally equipped municipalities and less urbanized areas.
-<br>
-Key Finding: The study highlights that crime rates often evolve independently of shared latent structures like density or wealth, suggesting that crime may be driven by more idiosyncratic or context-specific factors.
+## Project Overview
+The analysis investigates how crime rates correlate with socio-economic factors such as population density, income, and law enforcement attributes. By transforming high-dimensional data into interpretable components, the project identifies key structural dimensions of urban environments and partitions cities into distinct clusters based on their institutional profiles.
+
+### Key Methodologies
+**Dimensionality Reduction (PCA):** Extracts uncorrelated components to summarize urban data, identifying a primary dimension associated with urban density and security infrastructure.
+**Factor Analysis:** Uncovers latent structures driving variable correlations, utilizing **Maximum Likelihood Estimation** and **Varimax/Oblimin rotations** for enhanced interpretability.
+**Cluster Analysis:** Employs **Ward’s Method** and **K-means clustering** to identify natural groupings, revealing a clear bifurcation between high-density, institutionally equipped municipalities and more peripheral areas.
+**Diagnostic Testing:** Utilizes the **Kaiser Criterion**, **Scree Plots**, and **Silhouette Analysis** to ensure the statistical validity and homogeneity of the extracted structures.
+
+### Uncertainty and Inference
+Regarding the assessment of crime dynamics, the analysis reveals that crime rates often exhibit low communality and evolve independently of shared latent structures like density or wealth. This suggests that crime patterns are likely driven by idiosyncratic, context-specific factors—such as local governance or social cohesion—that are not fully captured by aggregate socio-economic indicators.
+
+---
