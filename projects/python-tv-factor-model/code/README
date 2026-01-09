@@ -1,0 +1,19 @@
+## Folder Structure
+
+```text
+code/
+└── empirics/
+    ├── main.py                    # Central driver script for the empirical pipeline
+    └── tools_empirics/            # Core library for TV-Factor logic
+        ├── estimation.py          # Static and time-varying factor estimation routines
+        ├── kernels.py             # Kernel functions and automated bandwidth handling
+        ├── alignment.py           # Procrustes alignment of identified factor spaces
+        ├── factors_ic.py          # Bai & Ng (2002) information criteria
+        ├── factors_abc.py         # ABC robust variance-based criteria
+        ├── hyptest_by_wang.py     # Tests for time variation (Su & Wang, 2017)
+        ├── oos.py                 # One-sided out-of-sample performance evaluation
+        ├── plotting.py            # Centralized routines for loading and factor visualization
+        ├── io_utils.py            # Data loading, cleaning, and preprocessing utilities
+        └── utils2.py              # Miscellaneous mathematical and helper functions
+data/                              # Raw or processed macro-financial datasets
+figures/                           # Automatically generated diagnostic and results plots
