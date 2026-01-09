@@ -25,18 +25,18 @@ code/
 └── empirics/
     ├── main.py                    # Central driver script (additional experiments)
     ├── tools_empirics/            # Modular functions and utilities
-    [cite_start]│   ├── estimation.py          # Static and time-varying factor estimation [cite: 67, 183]
-    │   ├── kernels.py             # Kernel functions and bandwidth handling
-    [cite_start]│   ├── alignment.py           # Procrustes alignment of factor spaces [cite: 186]
-    [cite_start]│   ├── factors_ic.py          # Information criteria for component selection [cite: 92]
-    [cite_start]│   ├── factors_abc.py         # Variance-based criteria [cite: 115]
-    [cite_start]│   ├── hyptest_by_wang.py     # Statistical tests for model fit [cite: 185]
-    │   ├── oos.py                 # Evaluation routines
-    [cite_start]│   ├── plotting.py            # Centralized plotting routines [cite: 93, 155]
-    [cite_start]│   ├── io_utils.py            # Data loading and preprocessing [cite: 58, 61]
-    │   └── utils2.py              # Miscellaneous helper functions
-    [cite_start]├── data/                      # Raw or processed city-level datasets [cite: 58]
-    [cite_start]└── figures/                   # Automatically generated figures (PCA/Factor plots) [cite: 62, 102]
+                    ├── estimation.py          # Static and time-varying factor estimation 
+                    ├── kernels.py             # Kernel functions and bandwidth handling
+                    ├── alignment.py           # Procrustes alignment of factor spaces' identification 
+                    ├── factors_ic.py          # Information criteria for component selection 
+                    ├── factors_abc.py         # more robust information criteria 
+                    ├── hyptest_by_wang.py     # Statistical tests for model fit
+                    ├── oos.py                 # out of sample performances
+                    ├── plotting.py            # Centralized plotting routines 
+                    ├── io_utils.py            # Data loading and preprocessing 
+                    │── utils2.py              # Miscellaneous helper functions
+    ├── data/                      # Raw or processed city-level datasets 
+    |── figures/                   # Automatically generated figures 
 
 ## Running the pipeline
 
